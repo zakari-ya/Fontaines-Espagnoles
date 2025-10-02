@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontaines Espagnoles - Décoration Jardin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="final_site_web.css">
+    <script src="final_site_web.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Professional Language Toggle -->
+    <div class="fixed top-3 right-6 z-50 flex gap-2 items-center" role="region" aria-label="Language selector">
+        <button id="btn-fr" class="lang-btn" type="button">FR</button>
+        <button id="btn-ar" class="lang-btn" type="button">AR</button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-water text-blue-400 text-2xl"></i>
+                <h1 class="text-xl font-bold text-gray-800" data-lang="fr">Fontaines Espagnoles</h1>
+                <h1 class="text-xl font-bold text-gray-800 hidden" data-lang="ar">نوافير إسبانية</h1>
+            </div>
+            <nav>
+                <!-- Ajoutez la classe Tailwind 'mr-[2cm]' OU un style inline pour garantir la compatibilité -->
+                <ul class="flex space-x-6 rtl:space-x-reverse">
+                    <li><a href="#products" class="text-gray-700 hover:text-blue-600 font-medium" data-lang="fr">Produits</a></li>
+                    <li><a href="#products" class="text-gray-700 hover:text-blue-600 font-medium hidden" data-lang="ar">منتجات</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600 font-medium" data-lang="fr">À propos</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-600 font-medium hidden" data-lang="ar">معلومات</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium" data-lang="fr">Contact</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium hidden" data-lang="ar">اتصال</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-green-600 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl font-bold mb-4" data-lang="fr">Décoration de Jardin d'Exception</h2>
+                <h2 class="text-4xl font-bold mb-4 hidden" data-lang="ar">ديكور حدائق استثنائي</h2>
+                <p class="text-xl mb-6" data-lang="fr">Découvrez notre collection exclusive de fontaines espagnoles, tables et vases pour embellir votre espace extérieur.</p>
+                <p class="text-xl mb-6 hidden" data-lang="ar">اكتشف مجموعتنا الحصرية من النوافير الإسبانية والطاولات والجرار لتجميل مساحتك الخارجية.</p>
+                <a href="#products" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 inline-block" data-lang="fr">Voir nos produits</a>
+                <a href="#products" class="bg-white text-blue-700 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300 inline-block hidden" data-lang="ar">عرض المنتجات</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="image/73.jpg" alt="Fontaine espagnole" class="rounded-lg shadow-2xl w-[600px] h-[400px] object-cover water-effect">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-lang="fr">Nos Produits</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 hidden" data-lang="ar">منتجاتنا</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in">
+                    <img src="image/22.jpg" alt="Fontaine espagnole" class="w-full h-64 object-cover water-effect">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Fontaine Espagnole Classique</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">نافورة إسبانية كلاسيكية</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Fontaine 2 étages , plug & play, crée un doux murmure d’eau et une élégance intemporelle dans votre jardin.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">نافورة من مستويين ، سهلة التركيب والتشغيل، تضفي صوت المياه الهادئ والأناقة الكلاسيكية على حديقتك.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">3 500 MAD</span>
+                            <button onclick="orderProduct('Fontaine Espagnole Classique')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.2s">
+                    <img src="image/47.jpg" alt="Table en grès" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Table Jardin 3</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">طاولة حديقة 3</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Table ronde résistante aux intempéries, idéale pour vos repas en plein air.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">طاولة دائرية مقاومة للعوامل الجوية، مثالية لوجباتك في الهواء الطلق.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">6 000 MAD</span>
+                            <button onclick="orderProduct('Table Jardin 3')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.4s">
+                    <img src="image/67.jpg" alt="Vases en grès" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Collection de Vases </h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">مجموعة جرار </h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Vases pour plantes et fleurs. Fabrication artisanale.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar"> جرار للنباتات والزهور. صناعة يدوية.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">600 MAD</span>
+                            <button onclick="orderProduct('Collection de Vases')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.6s">
+                    <img src="image/60.jpg" alt="Plantes méditerranéennes" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Table Jardin 1</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">طاولة حديقة 1</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Table sculpté de style espagnol, parfaite pour créer un coin repas authentique dans votre jardin méditerranéen.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">طاولة منحوت بالطراز الإسباني، مثالية لإنشاء زاوية طعام أصيلة في حديقتك المتوسطية</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">3 000 MAD</span>
+                            <button onclick="orderProduct('Table Jardin 1')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.8s">
+                    <img src="image/25.jpg" alt="Fontaine murale" class="w-full h-64 object-cover water-effect">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Fontaine Espagnole Classique 2</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">نافورة إسبانية كلاسيكية 2</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Fontaine 2 étages , plug & play, crée un doux murmure d’eau et une élégance intemporelle dans votre jardin.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">نافورة من مستويين ، سهلة التركيب والتشغيل، تضفي صوت المياه الهادئ والأناقة الكلاسيكية على حديقتك.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">3 500 MAD</span>
+                            <button onclick="orderProduct('Fontaine Espagnole Classique 2')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/26.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Fontaine Espagnole Classique 3</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">نافورة إسبانية كلاسيكية 3</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Fontaine 2 étages , plug & play</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">نافورة من مستويين ، سهلة التركيب والتشغيل</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">3 000 MAD</span>
+                            <button onclick="orderProduct('Fontaine Espagnole Classique 3')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/31.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Fontaine Espagnole Classique 4</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">نافورة إسبانية كلاسيكية 4</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Fontaine 2 étages , plug & play</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">نافورة من مستويين ، سهلة التركيب والتشغيل</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">3 000 MAD</span>
+                            <button onclick="orderProduct('Fontaine Espagnole Classique 4')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/44.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Fontaine de la Nature</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">نافورة الطبيعة</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Faites de votre jardin un paradis avec la Fontaine de la Nature. Achetez dès aujourd'hui et profitez d'une ambiance rustique et charmante</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">حوّل حديقتك إلى جنة خاصة مع نافورة الطبيعة. اشترِها اليوم واستمتع بأجواء ريفية ساحرة</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">2 500 MAD</span>
+                            <button onclick="orderProduct('Fontaine de la Nature')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/65.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Collection de Vases 2 </h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">مجموعة جرار 2</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Vases pour plantes et fleurs.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar"> جرار للنباتات والزهور.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">700 MAD</span>
+                            <button onclick="orderProduct('Collection de Vases 2')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/38.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Collection de Vases 3 </h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">مجموعة جرار 3</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Vases pour plantes et fleurs. </p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar"> جرار للنباتات والزهور.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">600 MAD</span>
+                            <button onclick="orderProduct('Collection de Vases 3')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Product 11 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 1s">
+                    <img src="image/66.jpg" alt="Pack complet" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Collection de Vases 4 </h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar"> مجموعة جرار 4</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Vases pour plantes et fleurs.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar"> جرار للنباتات والزهور.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">700 MAD</span>
+                            <button onclick="orderProduct('Collection de Vases 4')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.6s">
+                    <img src="image/52.jpg" alt="Plantes méditerranéennes" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Table Jardin 4</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">طاولة حديقة 4</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Table sculpté de style espagnol, parfaite pour créer un coin repas authentique dans votre jardin méditerranéen.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">طاولة منحوت بالطراز الإسباني، مثالية لإنشاء زاوية طعام أصيلة في حديقتك المتوسطية</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">9 000 MAD</span>
+                            <button onclick="orderProduct('Table Jardin 4')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 animate-fade-in" style="animation-delay: 0.6s">
+                    <img src="image/49.jpg" alt="Plantes méditerranéennes" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-lang="fr">Table Jardin 2</h3>
+                        <h3 class="text-xl font-bold mb-2 hidden" data-lang="ar">طاولة حديقة 2</h3>
+                        <p class="text-gray-600 mb-4" data-lang="fr">Table sculpté de style espagnol, parfaite pour créer un coin repas authentique dans votre jardin méditerranéen.</p>
+                        <p class="text-gray-600 mb-4 hidden" data-lang="ar">طاولة منحوت بالطراز الإسباني، مثالية لإنشاء زاوية طعام أصيلة في حديقتك المتوسطية</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-blue-700" dir="ltr" style="unicode-bidi: embed; direction: ltr;">5 000 MAD</span>
+                            <button onclick="orderProduct('Table Jardin 2')" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300 flex items-center">
+                                <i class="fas fa-shopping-cart mr-2"></i>
+                                <span data-lang="fr">Commander</span>
+                                <span class="hidden" data-lang="ar">اطلب</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800" data-lang="fr">À propos de nous</h2>
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800 hidden" data-lang="ar">معلومات عنا</h2>
+                    <p class="text-gray-700 mb-4" data-lang="fr">Nous sommes spécialisés dans l'importation et la vente de fontaines espagnoles authentiques, de mobilier en grès et de plantes méditerranéennes. Nos produits sont soigneusement sélectionnés pour leur qualité artisanale et leur authenticité.</p>
+                    <p class="text-gray-700 mb-4 hidden" data-lang="ar">نحن متخصصون في استيراد وبيع النوافير الإسبانية الأصيلة والأثاث الفخاري والنباتات المتوسطية. يتم اختيار منتجاتنا بعناية لجودتها الحرفية وأصالتها.</p>
+                    <p class="text-gray-700" data-lang="fr">Notre mission est de vous aider à créer des espaces extérieurs harmonieux inspirés des jardins andalous, en combinant beauté, fonctionnalité et durabilité.</p>
+                    <p class="text-gray-700 hidden" data-lang="ar">مهمتنا هي مساعدتك في إنشاء مساحات خارجية متناغمة مستوحاة من الحدائق الأندلسية، تجمع بين الجمال والوظائف والمتانة.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-blue-700" data-lang="fr">Pourquoi nous choisir ?</h3>
+                        <h3 class="text-xl font-bold mb-4 text-blue-700 hidden" data-lang="ar">لماذا تختارنا؟</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span data-lang="fr">Produits artisanaux authentiques importés d'Espagne</span>
+                                <span class="hidden" data-lang="ar">منتجات حرفية أصلية مستوردة من إسبانيا</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span data-lang="fr">Grès résistant aux intempéries et au gel</span>
+                                <span class="hidden" data-lang="ar">فخار مقاوم للعوامل الجوية والصقيع</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span data-lang="fr">Installation professionnelle des fontaines</span>
+                                <span class="hidden" data-lang="ar">تركيب احترافي للنوافير</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span data-lang="fr">Conseils personnalisés pour votre projet</span>
+                                <span class="hidden" data-lang="ar">نصائح مخصصة لمشروعك</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-lang="fr">Contactez-nous</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 hidden" data-lang="ar">اتصل بنا</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-6 text-blue-700" data-lang="fr">Envoyez-nous un message</h3>
+                    <h3 class="text-xl font-bold mb-6 text-blue-700 hidden" data-lang="ar">أرسل لنا رسالة</h3>
+                    
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1 font-medium" data-lang="fr">Nom complet</label>
+                            <label for="name" class="block mb-1 font-medium hidden" data-lang="ar">الاسم الكامل</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1 font-medium" data-lang="fr">Email</label>
+                            <label for="email" class="block mb-1 font-medium hidden" data-lang="ar">البريد الإلكتروني</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1 font-medium" data-lang="fr">Message</label>
+                            <label for="message" class="block mb-1 font-medium hidden" data-lang="ar">الرسالة</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="button" onclick="sendMessage()" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300 w-full">
+                            <span data-lang="fr">Envoyer</span>
+                            <span class="hidden" data-lang="ar">إرسال</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg h-full">
+                        <h3 class="text-xl font-bold mb-6 text-blue-700" data-lang="fr">Nos coordonnées</h3>
+                        <h3 class="text-xl font-bold mb-6 text-blue-700 hidden" data-lang="ar">معلومات الاتصال</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold" data-lang="fr">Adresse</h4>
+                                    <h4 class="font-bold hidden" data-lang="ar">العنوان</h4>
+                                    <p class="text-gray-700" data-lang="fr">Agadir, Maroc</p>
+                                    <p class="text-gray-700 hidden" data-lang="ar">اگادير، المغرب</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-blue-600 mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold" data-lang="fr">Téléphone</h4>
+                                    <h4 class="font-bold hidden" data-lang="ar">هاتف</h4>
+                                    <p class="text-gray-700"><span style="direction:ltr; unicode-bidi:embed">+212 655-185604</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-blue-600 mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold" data-lang="fr">Email</h4>
+                                    <h4 class="font-bold hidden" data-lang="ar">البريد الإلكتروني</h4>
+                                    <p class="text-gray-700">contact@fontaines-espagnoles.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fab fa-whatsapp text-green-600 mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold" data-lang="fr">WhatsApp</h4>
+                                    <h4 class="font-bold hidden" data-lang="ar">واتساب</h4>
+                                    <p class="text-gray-700 mb-2"><span style="direction:ltr; unicode-bidi:embed">+212 655-185604</span></p>
+                                    <button onclick="openWhatsApp()" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex items-center">
+                                        <i class="fab fa-whatsapp mr-2"></i>
+                                        <span data-lang="fr">Envoyer un message</span>
+                                        <span class="hidden" data-lang="ar">إرسال رسالة</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800" data-lang="fr">Questions fréquentes</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 hidden" data-lang="ar">أسئلة شائعة</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                  <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <h3 class="text-lg font-medium text-left" data-lang="fr">Comment passer une commande ?</h3>
+                        <h3 class="text-lg font-medium text-left hidden" data-lang="ar">كيفية تقديم الطلب؟</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p data-lang="fr">Cliquez sur le bouton "Commander" du produit souhaité, vous serez redirigé vers WhatsApp pour finaliser votre commande avec notre équipe.</p>
+                        <p class="hidden" data-lang="ar">انقر فوق زر "اطلب" للمنتج المطلوب، سيتم توجيهك إلى واتساب لإتمام طلبك مع فريقنا.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <h3 class="text-lg font-medium text-left" data-lang="fr">Comment entretenir une fontaine en grès ?</h3>
+                        <h3 class="text-lg font-medium text-left hidden" data-lang="ar">كيفية صيانة نافورة فخارية؟</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p data-lang="fr">Nos fontaines nécessitent peu d'entretien. En hiver, vidangez l'eau pour éviter le gel. Nettoyez avec une éponge douce et de l'eau claire. Évitez les produits chimiques abrasifs.</p>
+                        <p class="hidden" data-lang="ar">نوافيرنا تحتاج إلى صيانة قليلة. في الشتاء، أفرغ الماء لتجنب التجميد. نظف بإسفنجة ناعمة وماء نظيف. تجنب المواد الكيميائية الكاشطة.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <h3 class="text-lg font-medium text-left" data-lang="fr">Quels sont les modes de paiement acceptés ?</h3>
+                        <h3 class="text-lg font-medium text-left hidden" data-lang="ar">ما هي طرق الدفع المقبولة؟</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p data-lang="fr">Nous acceptons les paiements en espèces à la livraison, les virements bancaires et les transferts via services comme Wafacash ou Western Union.</p>
+                        <p class="hidden" data-lang="ar">نقبل الدفع نقدًا عند التسليم، التحويلات البنكية والتحويلات عبر خدمات مثل وفاكاش أو ويسترن يونيون.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <h3 class="text-lg font-medium text-left" data-lang="fr">Proposez-vous un service d'installation ?</h3>
+                        <h3 class="text-lg font-medium text-left hidden" data-lang="ar">هل تقدمون خدمة التركيب؟</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p data-lang="fr">Oui, nous proposons un service d'installation professionnel pour toutes nos fontaines, avec mise en route et conseils d'entretien. Des frais supplémentaires peuvent s'appliquer selon la complexité.</p>
+                        <p class="hidden" data-lang="ar">نعم، نقدم خدمة تركيب احترافية لجميع نوافيرنا، مع التشغيل ونصائح الصيانة. قد تنطبق رسوم إضافية حسب التعقيد.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                        <h3 class="text-lg font-medium text-left" data-lang="fr">Quel est le délai de livraison ?</h3>
+                        <h3 class="text-lg font-medium text-left hidden" data-lang="ar">ما هو وقت التسليم؟</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 bg-white">
+                        <p data-lang="fr">Les délais varient entre 3 à 7 jours ouvrables selon votre localisation et la disponibilité des produits. Pour les commandes spéciales, comptez 2 à 3 semaines.</p>
+                        <p class="hidden" data-lang="ar">تتراوح أوقات التسليم من 3 إلى 7 أيام عمل حسب موقعك وتوفر المنتجات. بالنسبة للطلبات الخاصة، احسب 2 إلى 3 أسابيع.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang="fr">Fontaines Espagnoles</h3>
+                    <h3 class="text-xl font-bold mb-4 hidden" data-lang="ar">نوافير إسبانية</h3>
+                    <p class="text-gray-400" data-lang="fr">Décoration jardin haut de gamme : fontaines, tables et vases en grès.</p>
+                    <p class="text-gray-400 hidden" data-lang="ar">ديكور حدائق فاخر: نوافير، طاولات وجرار فخارية.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang="fr">Liens rapides</h3>
+                    <h3 class="text-xl font-bold mb-4 hidden" data-lang="ar">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-300" data-lang="fr">Produits</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-300 hidden" data-lang="ar">منتجات</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300" data-lang="fr">À propos</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300 hidden" data-lang="ar">معلومات</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300" data-lang="fr">Contact</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300 hidden" data-lang="ar">اتصال</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang="fr">Contact</h3>
+                    <h3 class="text-xl font-bold mb-4 hidden" data-lang="ar">اتصال</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                            <span style="direction:ltr; unicode-bidi:embed">+212 655-185604</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-gray-400"></i>
+                            <span style="direction:ltr; unicode-bidi:embed">+212 655-185604</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                            <span>contact@fontaines-espagnoles.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4" data-lang="fr">Réseaux sociaux</h3>
+                    <h3 class="text-xl font-bold mb-4 hidden" data-lang="ar">وسائل التواصل الاجتماعي</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p data-lang="fr">&copy; 2023 Fontaines Espagnoles. Tous droits réservés.</p>
+                <p class="hidden" data-lang="ar">&copy; 2023 نوافير إسبانية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openWhatsApp()" class="bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-700 transition duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </button>
+    </div>
+    <!-- Product Image Lightbox Overlay -->
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <span id="lightbox-close" class="lightbox-close">&times;</span>
+        <img id="lightbox-img" class="lightbox-image" src="" alt="Image agrandie produit" draggable="false" />
+    </div>
+    
+    <!-- Force language switch JS (priorité absolue) -->
+    <script>
+      
+    </script>
+</body>
+</html>
